@@ -217,11 +217,11 @@ em, i, strong, b {
 }
 
 em, i {
-    font-family: "librebaskerville-italic", serif;
+    font-family: "Product Sans", serif;
 }
 
 strong, b {
-    font-family: "librebaskerville-bold", serif;
+    font-family: "Product Sans", serif;
 }
 
 small {
@@ -273,7 +273,7 @@ blockquote cite a, blockquote cite a:visited {
 }
 
 abbr {
-    font-family: "librebaskerville-bold", serif;
+    font-family: "Product Sans", serif;
     font-variant: small-caps;
     text-transform: lowercase;
     letter-spacing: .05rem;
@@ -438,7 +438,7 @@ table {
     border-width: 0;
     width: 100%;
     max-width: 100%;
-    font-family: "librebaskerville-regular", serif;
+    font-family: "Product Sans", serif;
 }
 
 th, td {
@@ -1267,7 +1267,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .section-intro h1 {
-    font-family: "librebaskerville-bold", serif;
+    font-family: "Product Sans", serif;
     font-size: 4.8rem;
     line-height: 1.375;
     margin-top: 0;
@@ -1797,7 +1797,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content h1 {
-    font-family: "librebaskerville-bold", serif;
+    font-family: "Product Sans", serif;
     color: #FFFFFF;
     font-size: 6rem;
     line-height: 1.35;
@@ -2642,7 +2642,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .testimonials-header h1 {
-    font-family: "librebaskerville-bold", serif;
+    font-family: "Product Sans", serif;
     font-size: 4.2rem;
     margin-top: 0;
     color: #FFFFFF;
@@ -2928,7 +2928,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .stats__count {
-    font-family: "librebaskerville-bold", serif;
+    font-family: "Product Sans", serif;
     font-size: 7.2rem;
     line-height: 1;
     color: #0D0A0B;
