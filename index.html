@@ -1,38 +1,21 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]>
-<html class="no-js oldie" lang="en">
-<![endif]-->
-<!--[if IE 9 ]>
-<html class="no-js oldie ie9" lang="en">
-<![endif]-->
-<!--[if (gte IE 9)|!(IE)]>
-<!-->
 <html class="no-js" lang="en">
-<!--
-<![endif]-->
 <head>
-    <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <title>Tienpt CV</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
-
-    <!-- Scripts -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
-
-    <!-- Favicons -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body id="top">
+    <div style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+        <button id="langToggle">Tiếng Việt</button>
+    </div>
+
     <header class="s-header">
         <div class="header-logo">
             <a class="site-logo" href="index.html">
@@ -54,10 +37,13 @@
         <div class="shadow-overlay"></div>
         <div class="home-content">
             <div class="row home-content__main">
-                <h3>Hello There</h3>
-                <h1>I am Phung Thanh Tien.<br>A QC Senior in Hanoi.<br>0945 83 88 89</h1>
+                <h3 class="lang-en">Hello There</h3>
+                <h3 class="lang-vi" style="display:none;">Xin chào</h3>
+                <h1 class="lang-en">I am Phung Thanh Tien.<br>A QC Senior in Hanoi.<br>0945 83 88 89</h1>
+                <h1 class="lang-vi" style="display:none;">Tôi là Phùng Thanh Tiến.<br>Một trưởng nhóm QC tại Hà Nội.<br>0945 83 88 89</h1>
                 <div class="home-content__buttons">
-                    <a href="#about" class="smoothscroll btn btn--stroke">My Experience</a>
+                    <a href="#about" class="smoothscroll btn btn--stroke lang-en">My Experience</a>
+                    <a href="#about" class="smoothscroll btn btn--stroke lang-vi" style="display:none;">Kinh nghiệm</a>
                     <a href="https://www.linkedin.com/in/phùng-thanh-tiến-b6698292" class="smoothscroll btn btn--stroke">LinkedIn</a>
                 </div>
                 <div class="home-content__scroll">
@@ -70,15 +56,19 @@
     <section id="about" class="s-about target-section">
         <div class="row narrow section-intro has-bottom-sep">
             <div class="col-full text-center">
-                <h3>About</h3>
-                <h1>More About Me</h1>
-                <p class="lead">Meticulous Senior Tester with 13 years of experience in software testing and quality assurance.</p>
+                <h3 class="lang-en">About</h3>
+                <h3 class="lang-vi" style="display:none;">Giới thiệu</h3>
+                <h1 class="lang-en">More About Me</h1>
+                <h1 class="lang-vi" style="display:none;">Thông tin thêm về tôi</h1>
+                <p class="lead lang-en">Meticulous Senior Tester with 13 years of experience in software testing and quality assurance.</p>
+                <p class="lead lang-vi" style="display:none;">Tester cao cấp tỉ mỉ với 13 năm kinh nghiệm trong kiểm thử phần mềm và đảm bảo chất lượng.</p>
             </div>
         </div>
         <div class="row about-content">
             <div class="col-six tab-full">
-                <h3>Skills</h3>
-                <ul>
+                <h3 class="lang-en">Skills</h3>
+                <h3 class="lang-vi" style="display:none;">Kỹ năng</h3>
+                <ul class="lang-en">
                     <li>Senior technical member</li>
                     <li>Development Life Cycle: Agile/Scrum, Waterfall (Traditional)</li>
                     <li>Databases: SQL Server, MySQL, PostgreSQL, AWS DynamoDB, GCP Spanner</li>
@@ -98,6 +88,26 @@
                     </li>
                     <li>Experience working in English & Japanese environments</li>
                 </ul>
+                <ul class="lang-vi" style="display:none;">
+                    <li>Thành viên kỹ thuật cao cấp</li>
+                    <li>Vòng đời phát triển phần mềm: Agile/Scrum, Waterfall (truyền thống)</li>
+                    <li>Cơ sở dữ liệu: SQL Server, MySQL, PostgreSQL, AWS DynamoDB, GCP Spanner</li>
+                    <li>Kiểm thử API: Postman (API Workflow / Test Script / Collection Runner)</li>
+                    <li>Kiểm thử hiệu năng: Load test, stress test trên thiết bị thật sử dụng JMeter</li>
+                    <li>Checklist toàn diện cho kiểm thử game di động</li>
+                    <li>Kinh nghiệm kiểm thử trên hơn 100 thiết bị thật với nhiều nền tảng (Android, iOS, Java, WebOS, tvOS, v.v.)</li>
+                    <li>Kinh nghiệm trong các lĩnh vực:
+                        <ul>
+                            <li>Blockchain</li>
+                            <li>Giáo dục</li>
+                            <li>Giao hàng</li>
+                            <li>ERP</li>
+                            <li>Game mạng xã hội</li>
+                            <li>Thực tế ảo (VR)</li>
+                        </ul>
+                    </li>
+                    <li>Kinh nghiệm làm việc trong môi trường tiếng Anh & tiếng Nhật</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -106,7 +116,8 @@
         <div class="overlay"></div>
         <div class="row narrow section-intro">
             <div class="col-full">
-                <h3>Contact Me</h3>
+                <h3 class="lang-en">Contact Me</h3>
+                <h3 class="lang-vi" style="display:none;">Liên hệ với tôi</h3>
             </div>
         </div>
         <div class="row contact__main">
@@ -130,9 +141,19 @@
         <div id="loader"></div>
     </div>
 
-    <!-- JavaScript -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        const toggleBtn = document.getElementById('langToggle');
+        let isVietnamese = false;
+
+        toggleBtn.addEventListener('click', () => {
+            isVietnamese = !isVietnamese;
+            document.querySelectorAll('.lang-en').forEach(el => el.style.display = isVietnamese ? 'none' : '');
+            document.querySelectorAll('.lang-vi').forEach(el => el.style.display = isVietnamese ? '' : 'none');
+            toggleBtn.textContent = isVietnamese ? 'English' : 'Tiếng Việt';
+        });
+    </script>
 </body>
 </html>
