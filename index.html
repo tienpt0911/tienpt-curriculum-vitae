@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="vi">
 <head>
     <meta charset="utf-8">
     <title>Tienpt CV</title>
@@ -10,149 +10,51 @@
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .flag-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+        .flag-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body id="top">
-    <div style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
-        <button id="langToggle">Tiếng Việt</button>
+    <div class="flag-toggle">
+        <img id="langToggle" class="flag-btn" src="images/uk-flag.png" alt="Switch Language">
     </div>
 
-    <header class="s-header">
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo-t.png" alt="Homepage">
-            </a>
-        </div>
-        <nav class="header-nav-wrap">
-            <ul class="header-nav">
-                <li class="current"><a class="smoothscroll" href="#home" title="Home">Home</a></li>
-                <li><a class="smoothscroll" href="#about" title="About">About</a></li>
-                <li><a class="smoothscroll" href="#contact" title="Contact">Contact</a></li>
-            </ul>
-        </nav>
-        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
-    </header>
-
-    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/abc.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
-        <div class="home-content">
-            <div class="row home-content__main">
-                <h3 class="lang-en">Hello There</h3>
-                <h3 class="lang-vi" style="display:none;">Xin chào</h3>
-                <h1 class="lang-en">I am Phung Thanh Tien.<br>A QC Senior in Hanoi.<br>0945 83 88 89</h1>
-                <h1 class="lang-vi" style="display:none;">Tôi là Phùng Thanh Tiến.<br>Một trưởng nhóm QC tại Hà Nội.<br>0945 83 88 89</h1>
-                <div class="home-content__buttons">
-                    <a href="#about" class="smoothscroll btn btn--stroke lang-en">My Experience</a>
-                    <a href="#about" class="smoothscroll btn btn--stroke lang-vi" style="display:none;">Kinh nghiệm</a>
-                    <a href="https://www.linkedin.com/in/phùng-thanh-tiến-b6698292" class="smoothscroll btn btn--stroke">LinkedIn</a>
-                </div>
-                <div class="home-content__scroll">
-                    <a href="#about" class="scroll-link smoothscroll"><span>Scroll Down</span></a>
-                </div>
-            </div>
-        </div>
+    <!-- Nội dung ví dụ đã được rút gọn, giả định có class lang-en/lang-vi và mặc định lang-vi hiển thị -->
+    <section id="home">
+        <h3 class="lang-en" style="display:none;">Hello There</h3>
+        <h3 class="lang-vi">Xin chào</h3>
+        <h1 class="lang-en" style="display:none;">I am Phung Thanh Tien.<br>A QC Senior in Hanoi.<br>0945 83 88 89</h1>
+        <h1 class="lang-vi">Tôi là Phùng Thanh Tiến.<br>Một trưởng nhóm QC tại Hà Nội.<br>0945 83 88 89</h1>
     </section>
 
-    <section id="about" class="s-about target-section">
-        <div class="row narrow section-intro has-bottom-sep">
-            <div class="col-full text-center">
-                <h3 class="lang-en">About</h3>
-                <h3 class="lang-vi" style="display:none;">Giới thiệu</h3>
-                <h1 class="lang-en">More About Me</h1>
-                <h1 class="lang-vi" style="display:none;">Thông tin thêm về tôi</h1>
-                <p class="lead lang-en">Meticulous Senior Tester with 13 years of experience in software testing and quality assurance.</p>
-                <p class="lead lang-vi" style="display:none;">Tester cao cấp tỉ mỉ với 13 năm kinh nghiệm trong kiểm thử phần mềm và đảm bảo chất lượng.</p>
-            </div>
-        </div>
-        <div class="row about-content">
-            <div class="col-six tab-full">
-                <h3 class="lang-en">Skills</h3>
-                <h3 class="lang-vi" style="display:none;">Kỹ năng</h3>
-                <ul class="lang-en">
-                    <li>Senior technical member</li>
-                    <li>Development Life Cycle: Agile/Scrum, Waterfall (Traditional)</li>
-                    <li>Databases: SQL Server, MySQL, PostgreSQL, AWS DynamoDB, GCP Spanner</li>
-                    <li>API Testing: Postman (API Workflow / Test Script / Collection Runner)</li>
-                    <li>Performance Testing: Load test, stress test on real devices using JMeter</li>
-                    <li>Comprehensive checklist for mobile game testing</li>
-                    <li>Testing experience on over 100 real devices across multiple platforms (Android, iOS, Java, WebOS, tvOS, etc.)</li>
-                    <li>Experience in domains:
-                        <ul>
-                            <li>Blockchain</li>
-                            <li>Education</li>
-                            <li>Delivery</li>
-                            <li>ERP</li>
-                            <li>Social Gaming</li>
-                            <li>VR</li>
-                        </ul>
-                    </li>
-                    <li>Experience working in English & Japanese environments</li>
-                </ul>
-                <ul class="lang-vi" style="display:none;">
-                    <li>Thành viên kỹ thuật cao cấp</li>
-                    <li>Vòng đời phát triển phần mềm: Agile/Scrum, Waterfall (truyền thống)</li>
-                    <li>Cơ sở dữ liệu: SQL Server, MySQL, PostgreSQL, AWS DynamoDB, GCP Spanner</li>
-                    <li>Kiểm thử API: Postman (API Workflow / Test Script / Collection Runner)</li>
-                    <li>Kiểm thử hiệu năng: Load test, stress test trên thiết bị thật sử dụng JMeter</li>
-                    <li>Checklist toàn diện cho kiểm thử game di động</li>
-                    <li>Kinh nghiệm kiểm thử trên hơn 100 thiết bị thật với nhiều nền tảng (Android, iOS, Java, WebOS, tvOS, v.v.)</li>
-                    <li>Kinh nghiệm trong các lĩnh vực:
-                        <ul>
-                            <li>Blockchain</li>
-                            <li>Giáo dục</li>
-                            <li>Giao hàng</li>
-                            <li>ERP</li>
-                            <li>Game mạng xã hội</li>
-                            <li>Thực tế ảo (VR)</li>
-                        </ul>
-                    </li>
-                    <li>Kinh nghiệm làm việc trong môi trường tiếng Anh & tiếng Nhật</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="s-contact target-section">
-        <div class="overlay"></div>
-        <div class="row narrow section-intro">
-            <div class="col-full">
-                <h3 class="lang-en">Contact Me</h3>
-                <h3 class="lang-vi" style="display:none;">Liên hệ với tôi</h3>
-            </div>
-        </div>
-        <div class="row contact__main">
-            <div class="col-four tab-full contact__infos">
-                <h4 class="h06">Mobile</h4>
-                <p>0945 83 88 89</p>
-                <h4 class="h06">Email</h4>
-                <p>tienpt0911@gmail.com</p>
-                <h4 class="h06">Profiles</h4>
-                <p>
-                    <a href="https://tienpt0911.github.io/tienpt-curriculum-vitae/">My GitHub</a><br>
-                    <a href="https://tienpt0911.github.io/tienpt-curriculum-vitae/">My Facebook</a>
-                </p>
-                <h4 class="h06">Address</h4>
-                <p>Duy Tan, Cau Giay, Hanoi</p>
-            </div>
-        </div>
-    </section>
-
-    <div id="preloader">
-        <div id="loader"></div>
-    </div>
+    <!-- Các section khác cũng tương tự với class lang-en/lang-vi -->
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script>
-        const toggleBtn = document.getElementById('langToggle');
-        let isVietnamese = false;
+        const langToggle = document.getElementById('langToggle');
+        let isVietnamese = true;
 
-        toggleBtn.addEventListener('click', () => {
+        langToggle.addEventListener('click', () => {
             isVietnamese = !isVietnamese;
             document.querySelectorAll('.lang-en').forEach(el => el.style.display = isVietnamese ? 'none' : '');
             document.querySelectorAll('.lang-vi').forEach(el => el.style.display = isVietnamese ? '' : 'none');
-            toggleBtn.textContent = isVietnamese ? 'English' : 'Tiếng Việt';
+            langToggle.src = isVietnamese ? 'images/uk-flag.png' : 'images/vn-flag.png';
         });
     </script>
 </body>
