@@ -16,10 +16,19 @@ export const CVDocument: React.FC = () => {
       <header className="border-b-2 border-black pb-4 mb-8">
         <h1 className="text-5xl font-bold mb-2">Phùng Thanh Tiến</h1>
         <h2 className="text-2xl text-gray-700">Senior QC Engineer</h2>
-        <div className="mt-4 text-sm flex gap-4">
-          <span>{t.about.stats.years}</span>
-          <span>{t.about.stats.devices}</span>
-          <span>{t.about.stats.domains}</span>
+        
+        <div className="mt-4 text-sm flex flex-wrap gap-x-4 gap-y-1 font-mono text-gray-600">
+          <span>📱 0945 83 88 89</span>
+          <span>✉️ tienpt0911@gmail.com</span>
+          <span>📍 Duy Tan, Cau Giay, Hanoi</span>
+          <span>🌐 github.com/tienpt0911</span>
+          <span>💼 linkedin.com/in/phùng-thanh-tiến-b6698292</span>
+        </div>
+
+        <div className="mt-4 text-sm flex gap-6 font-semibold">
+          <span>13+ {t.about.stats.years}</span>
+          <span>100+ {t.about.stats.devices}</span>
+          <span>5+ {t.about.stats.domains}</span>
         </div>
       </header>
 
