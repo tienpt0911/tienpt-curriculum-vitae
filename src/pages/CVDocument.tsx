@@ -1,4 +1,4 @@
-﻿import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export const CVDocument: React.FC = () => {
@@ -14,7 +14,7 @@ export const CVDocument: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto p-12 bg-white text-black min-h-screen" style={{ fontFamily: 'serif' }}>
       <header className="border-b-2 border-black pb-4 mb-8">
-        <h1 className="text-5xl font-bold mb-2">Phùng Thanh Ti?n</h1>
+        <h1 className="text-5xl font-bold mb-2">Phùng Thanh Tiến</h1>
         <h2 className="text-2xl text-gray-700">Senior QC Engineer</h2>
         <div className="mt-4 text-sm flex gap-4">
           <span>{t.about.stats.years}</span>
