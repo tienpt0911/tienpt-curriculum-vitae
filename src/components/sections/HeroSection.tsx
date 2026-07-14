@@ -117,7 +117,7 @@ export const HeroSection: React.FC = () => {
             <LinkedInIcon className="w-5 h-5" />
           </a>
           <a
-            href="/cv-print"
+            href="?view=print"
             target="_blank"
             className="flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm tracking-wide uppercase transition-all hover:scale-105 pointer-events-auto"
             style={{

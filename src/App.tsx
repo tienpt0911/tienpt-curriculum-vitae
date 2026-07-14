@@ -34,7 +34,7 @@ function AppContent() {
 }
 
 function App() {
-  const isPrint = window.location.pathname === '/cv-print';
+  const isPrint = window.location.search.includes('view=print');
 
   return (
     <LanguageProvider>
