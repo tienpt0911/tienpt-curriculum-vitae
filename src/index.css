@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body, #root {
+    @apply m-0 p-0 box-border;
+    overflow-x: clip;
+    font-family: 'Be Vietnam Pro', sans-serif !important;
+  }
+}
+
+@layer components {
+  .hero-heading {
+    background: linear-gradient(
+      180deg,
+      var(--gradient-from, #3B82F6) 0%,
+      var(--gradient-to, #60A5FA) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+@theme {
+  --font-sans: 'Be Vietnam Pro', 'Inter', system-ui, sans-serif;
+}
